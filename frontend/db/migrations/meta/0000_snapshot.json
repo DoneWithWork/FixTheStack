@@ -1,5 +1,5 @@
 {
-  "id": "f7744a35-8cb4-45a4-99d9-d62acf07412b",
+  "id": "d508375e-6700-4a6c-8568-283510ca02fa",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
@@ -62,10 +62,10 @@
       },
       "indexes": {},
       "foreignKeys": {
-        "api_keys_userId_users_id_fk": {
-          "name": "api_keys_userId_users_id_fk",
+        "api_keys_userId_user_id_fk": {
+          "name": "api_keys_userId_user_id_fk",
           "tableFrom": "api_keys",
-          "tableTo": "users",
+          "tableTo": "user",
           "columnsFrom": [
             "userId"
           ],
@@ -163,10 +163,10 @@
       },
       "indexes": {},
       "foreignKeys": {
-        "account_userId_users_id_fk": {
-          "name": "account_userId_users_id_fk",
+        "account_userId_user_id_fk": {
+          "name": "account_userId_user_id_fk",
           "tableFrom": "account",
-          "tableTo": "users",
+          "tableTo": "user",
           "columnsFrom": [
             "userId"
           ],
@@ -246,10 +246,10 @@
       },
       "indexes": {},
       "foreignKeys": {
-        "authenticator_userId_users_id_fk": {
-          "name": "authenticator_userId_users_id_fk",
+        "authenticator_userId_user_id_fk": {
+          "name": "authenticator_userId_user_id_fk",
           "tableFrom": "authenticator",
-          "tableTo": "users",
+          "tableTo": "user",
           "columnsFrom": [
             "userId"
           ],
@@ -307,10 +307,10 @@
       },
       "indexes": {},
       "foreignKeys": {
-        "session_userId_users_id_fk": {
-          "name": "session_userId_users_id_fk",
+        "session_userId_user_id_fk": {
+          "name": "session_userId_user_id_fk",
           "tableFrom": "session",
-          "tableTo": "users",
+          "tableTo": "user",
           "columnsFrom": [
             "userId"
           ],
@@ -436,10 +436,10 @@
       },
       "indexes": {},
       "foreignKeys": {
-        "devices_userId_users_id_fk": {
-          "name": "devices_userId_users_id_fk",
+        "devices_userId_user_id_fk": {
+          "name": "devices_userId_user_id_fk",
           "tableFrom": "devices",
-          "tableTo": "users",
+          "tableTo": "user",
           "columnsFrom": [
             "userId"
           ],
@@ -592,10 +592,10 @@
       },
       "indexes": {},
       "foreignKeys": {
-        "users_to_institutions_userId_users_id_fk": {
-          "name": "users_to_institutions_userId_users_id_fk",
+        "users_to_institutions_userId_user_id_fk": {
+          "name": "users_to_institutions_userId_user_id_fk",
           "tableFrom": "users_to_institutions",
-          "tableTo": "users",
+          "tableTo": "user",
           "columnsFrom": [
             "userId"
           ],
@@ -753,10 +753,10 @@
       },
       "indexes": {},
       "foreignKeys": {
-        "projects_userId_users_id_fk": {
-          "name": "projects_userId_users_id_fk",
+        "projects_userId_user_id_fk": {
+          "name": "projects_userId_user_id_fk",
           "tableFrom": "projects",
-          "tableTo": "users",
+          "tableTo": "user",
           "columnsFrom": [
             "userId"
           ],
@@ -773,8 +773,8 @@
       "checkConstraints": {},
       "isRLSEnabled": false
     },
-    "public.users": {
-      "name": "users",
+    "public.user": {
+      "name": "user",
       "schema": "",
       "columns": {
         "id": {
@@ -867,8 +867,8 @@
       "foreignKeys": {},
       "compositePrimaryKeys": {},
       "uniqueConstraints": {
-        "users_email_unique": {
-          "name": "users_email_unique",
+        "user_email_unique": {
+          "name": "user_email_unique",
           "nullsNotDistinct": false,
           "columns": [
             "email"

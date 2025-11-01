@@ -1,9 +1,8 @@
-import React from "react";
-
-import { motion } from "framer-motion";
+"use client";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 
-export default function Hero() {
+export default function Hero({ children }: { children?: React.ReactNode }) {
   return (
     <section className="flex flex-col items-center justify-center text-center py-24 px-6">
       <motion.h1
@@ -44,6 +43,7 @@ export default function Hero() {
         >
           Learn More
         </Button>
+        {children}
       </motion.div>
     </section>
   );

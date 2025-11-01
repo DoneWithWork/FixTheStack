@@ -1,9 +1,9 @@
 import { InferSelectModel } from "drizzle-orm";
-import { users } from "../tables/users";
-import { institutions, usersToInstitutions } from "../tables/institutions";
-import { projectGroups, projects } from "../tables/projects";
-import { devices } from "../tables/devices";
-import { apiKeys } from "../tables/apiKeys";
+import { users } from "../schema/tables/users";
+import { institutions, usersToInstitutions } from "../schema/tables/institutions";
+import { projectGroups, projects } from "../schema/tables/projects";
+import { devices } from "../schema/tables/devices";
+import { apiKeys } from "../schema/tables/apiKeys";
 
 
 

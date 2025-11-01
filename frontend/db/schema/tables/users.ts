@@ -3,7 +3,7 @@ import { pgTable } from "drizzle-orm/pg-core";
 import { roles, plans } from "../enums";
 import { timestamps } from "./timestamps";
 
-export const users = pgTable("users", {
+export const users = pgTable("user", {
     id: text("id")
         .primaryKey()
         .$defaultFn(() => crypto.randomUUID()),
